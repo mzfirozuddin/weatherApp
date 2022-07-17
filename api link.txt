@@ -1,0 +1,17 @@
+ee10a1d619d6908da0bdc3221ef02f91
+
+https://api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=e9673f59a71129cbce8c3ea421473481
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=1c69443c2c0b3575c9162772fee37818
+
+
+https://api.openweathermap.org/data/2.5/weather?q=kolkata&units=metric&appid=692c0ca681a4eef3b94aef99ab453b8f
+
+
+
+http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&APPID=e9673f59a71129cbce8c3ea421473481     ->(new)
+
+
+https://api.countrystatecity.in/v1/countries/SmRDQnBpSFVzNTRlRHp2MExWbm80M0p4aFI1N3pYTDBCS2pKeVhqYQ==

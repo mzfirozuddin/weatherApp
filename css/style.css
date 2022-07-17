@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500;600&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 3.2rem;
+    background-color: #a5bbdd;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.navbar h1{
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(120, 13, 214);
+}
+.mainBox{
+    width: 80%;
+    /* height: 100%; */
+    margin: 2.5rem auto;
+    padding: 3rem 10rem;
+    background-color: whitesmoke;
+    /* border: 2px solid red; */
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.locBox{
+    width: 20rem;
+    height: 20rem;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    background: #a5bbdd;
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.center{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* color: whitesmoke; */
+    margin-bottom: 2.5rem;
+}
+
+.mb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 17rem;
+    height: 2rem;
+    background-color:white;
+    border-radius: 0.5rem;
+}
+
+select{
+    /* text-align: center; */
+    font-size: 0.8rem;
+    border: none;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+.box{
+    width: 20rem;
+    height: 30rem;
+    /* border: 2px solid black; */
+    border-radius: 0.5rem;
+    /* margin: 100px auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(232, 238, 240); */
+    background: #a5bbdd;
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: large;
+    position: relative;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    min-height: 35rem;
+    overflow: hidden;
+
+}
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -25rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+
+}
+
+.wave .three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2; 
+
+}
+
+.wave .two{
+    animation: drift 7000ms infinite linear;
+    z-index: 3 !important;
+    opacity: 0.1; 
+
+}
+
+@keyframes drift{
+    from{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+/* .box:after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0,0,0);
+} */
+
+.info{
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    height: 45%;
+    z-index: 4;
+}
+
+.location{
+    margin-top: 1.5rem;
+    text-align: center;
+    
+}
+
+.fa-street-view{
+    animation: rotates 3s linear infinite alternate; 
+}
+
+@keyframes rotates{
+    from{
+        transform: translateX(-0.5rem);
+    }
+    to{
+        transform: translateX(0.5rem); 
+    }
+}
+.box:hover {
+    box-shadow: 0 24px 40px 0 rgba(0,0,0,0.2);
+  }
+
+/* .weather-cond{
+    margin:;
+} */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+#weather-cond{
+    margin-top: -20rem;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#weather-cond .wea{
+    font-size: 6rem;
+    animation: wea-anime 3s linear infinite alternate;
+}
+
+@keyframes wea-anime{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+/* .gapp{
+    margin: 10px;
+} */
+
+
+/*========================
+RESPONSIVE THE WEBSITE
+=========================*/
+
+@media only screen and (max-width: 1300px) {
+    .mainBox{
+    /* width: 80%;
+    margin: 3rem auto; */
+    padding: 3rem 6rem;
+    /* background-color: whitesmoke;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+  }
+}
+
+
+@media only screen and (max-width: 1150px) {
+     .mainBox{
+       padding: 3rem 4rem;
+
+    }
+}
+
+@media only screen and (max-width: 990px) {
+     .mainBox{
+       padding: 3rem 2rem;
+
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .mainBox{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .mainBox{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mainBox{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+}

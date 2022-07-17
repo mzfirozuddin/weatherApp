@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MIRZA FIROZ UDDIN">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar">
+            <h1>Weather App</h1>
+    </nav>
+    <div class="mainBox">
+        <div class="locBox">
+            <form>
+                <h3 class="center">Choose Location</h3>
+                <div class="mb">
+                    <select name="countrylist" id="countrylist">
+                       
+                    </select>
+                </div>
+                <div class="mb">
+                    <select name="statelist" id="statelist" disabled>
+                        <!-- <option value="">Select State</option> -->
+                    </select>
+                </div>
+                <div class="mb">
+                    <select name="citylist" id="citylist" disabled>
+                        <!-- <option value="">Select City</option> -->
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <div id="weather-cond">
+                 <!-- <i class="fa-solid fa-sun wea" style="color: #eccc68;"></i> -->
+            </div>
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+    
+            
+            <div class="info">
+                <!-- <i class="fa-solid fa-street-view"><h2 class="location" id="loc"></h2></i> -->
+                <h2 class="location" id="loc"></i></h2>
+                <p id="date">WED | OCT 23 | 10:49AM</p>
+                <h1 class="temp" id="temperature"></h1>
+                <h3 class="temp_min_max" id="temperature_min_max"></h3>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
