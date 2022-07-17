@@ -149,7 +149,7 @@
             getWeather(selectedCity,selectedCountryCode);
          });
 
-       function getWeather(cityName, countryCode){
+       async function getWeather(cityName, countryCode){
             fetch(`${config.wUrl}weather?q=${cityName},${countryCode.toLowerCase()}&units=metric&APPID=${config.wKey}`)
             .then((response)=>{
                 // console.log(response.json());
