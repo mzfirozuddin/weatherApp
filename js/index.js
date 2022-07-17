@@ -48,7 +48,7 @@
             }
         return `${month} ${date} | ${hours}:${mins}${periods}`;
         };
-        currDate.innerHTML = getCurrentDay() + " | " + getCurrentTime();
+        currDate.innerHTML = getCurrentDay() + "  |  " + getCurrentTime();
 
         // get countries function
 
