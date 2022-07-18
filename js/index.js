@@ -90,10 +90,11 @@
             // console.log(countries);
             let countriesOption = "";
             if(countries){
-                countriesOption +=`<option value="">Select Country<option>`;
+                countriesOption +=`<option value="">Select Country`;
 
                 countries.forEach((country) =>{
-                    countriesOption +=`<option value="${country.iso2}">${country.name}<option>`;
+                    countriesOption += `<option value="${country.iso2}">${country.name}`;
+                    // console.log(countriesOption);
                 });
 
                 countriesListDropDown.innerHTML =  countriesOption;
@@ -107,10 +108,10 @@
                 // console.log(states);
                 let statesOption = "";
                 if(states){
-                    statesOption +=`<option value="">Select States<option>`;
+                    statesOption +=`<option value="">Select States`;
 
                 states.forEach((state) =>{
-                    statesOption +=`<option value="${state.iso2}">${state.name}<option>`;
+                    statesOption +=`<option value="${state.iso2}">${state.name}`;
                 });
 
                 statesListDropDown.innerHTML =  statesOption;
@@ -126,10 +127,10 @@
                 // console.log(cities);
                 let citiesOption = "";
                 if(cities){
-                    citiesOption +=`<option value="">Select City<option>`;
+                    citiesOption +=`<option value="">Select City`;
 
                 cities.forEach((city) =>{
-                    citiesOption +=`<option value="${city.name}">${city.name}<option>`;
+                    citiesOption +=`<option value="${city.name}">${city.name}`;
                 });
 
                 citiesListDropDown.innerHTML =  citiesOption;
